@@ -31,7 +31,7 @@ public class ComputaBuscaPalavra extends Thread{
         int numeroDeOcorrencia = 0;
         for (int i = inicio; i <= fim; i++) {
             try {
-                lista = convertFileToList("dataset/"+i+".txt");
+                lista = convertFileToList("src/dataset/"+i+".txt");
                 for (String palavra: lista) {
                     if(palavra.equalsIgnoreCase(this.palavra)){
                         numeroDeOcorrencia++;

@@ -33,7 +33,7 @@ public class ComputaBusca250Arquivos{
             List<String> lista;
             int numeroLista = 1;
             List<ComputaBuscaPalavraEmLista> listaDeArquivo = new ArrayList<>();
-            lista = convertFileToList("dataset/"+numeroLista+".txt");
+            lista = convertFileToList("src/dataset/"+numeroLista+".txt");
             System.out.println(lista.size());
             for (int i = 0; i <= lista.size()-1 ; i++) {
                 ComputaBuscaPalavraEmLista thread = new ComputaBuscaPalavraEmLista(i,i,palavra,lista);

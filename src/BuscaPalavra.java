@@ -11,7 +11,7 @@ public class BuscaPalavra {
         int numeroDeOcorrencia = 0;
         if(verificarAListaToda){
             for (int i = 0; i <= 249; i++) {
-                lista = convertFileToList("dataset/"+i+".txt");
+                lista = convertFileToList("src/dataset/"+i+".txt");
                 for (String palavra: lista) {
                     if(palavra.equalsIgnoreCase("traditional")){
                         numeroDeOcorrencia++;
@@ -20,7 +20,7 @@ public class BuscaPalavra {
             }
         } else{
             int numeroLista = 1;
-            lista = convertFileToList("dataset/"+numeroLista+".txt");
+            lista = convertFileToList("src/dataset/"+numeroLista+".txt");
             for (String palavra: lista) {
                 if(palavra.equalsIgnoreCase("traditional")){
                     numeroDeOcorrencia++;

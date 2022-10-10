@@ -50,7 +50,7 @@ public class ComputaBuscaXThreads {
         }else {
             List<String> lista;
             int numeroLista = 1;
-            lista = convertFileToList("dataset/"+numeroLista+".txt");
+            lista = convertFileToList("src/dataset/"+numeroLista+".txt");
             int primeiraThread = Math.round(lista.size()/numeroDeCores);
             ComputaBuscaPalavraEmLista thread1 = new ComputaBuscaPalavraEmLista(0,primeiraThread, palavra,lista);
             int aux = primeiraThread;

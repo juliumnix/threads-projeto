@@ -25,7 +25,7 @@ public class ComputaBusca2Thread {
         } else {
             List<String>lista;
             int numeroLista = 1;
-            lista = convertFileToList("dataset/"+numeroLista+".txt");
+            lista = convertFileToList("src/dataset/"+numeroLista+".txt");
             int primeiraThread = Math.round(lista.size()/2);
             int segundaThread = primeiraThread +1;
             ComputaBuscaPalavraEmLista thread1 = new ComputaBuscaPalavraEmLista(0,primeiraThread, palavra, lista);
