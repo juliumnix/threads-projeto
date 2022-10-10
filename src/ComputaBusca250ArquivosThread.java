@@ -32,7 +32,7 @@ public class ComputaBusca250ArquivosThread extends Thread {
         int numeroDeOcorrencia = 0;
         for (int i = inicio; i <= fim; i++) {
             try {
-                lista = convertFileToList("src/ataset/"+i+".txt");
+                lista = convertFileToList("src/dataset/"+i+".txt");
                 for (String palavra: lista) {
                     if(palavra.equalsIgnoreCase(this.palavra)){
                         numeroDeOcorrencia++;
